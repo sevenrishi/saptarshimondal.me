@@ -1,0 +1,145 @@
+:root {
+  /* color */
+  /*--clr-light-yellow: #ffca2f;
+  --clr-dark-yellow: #fab500;
+  --clr-red: #ff0000;
+  --clr-baclk-1: #040404;
+  --clr-black-2: #1a1a1a;
+  --clr-black: #000000;
+  --clr-white: #ffffff; */
+
+  --clr-light-yellow: 41.31, 98.5%, 51.2%;
+  --clr-dark-yellow: 41.31, 98.5%, 51.2%;
+  --clr-red: 0 100% 50%;
+  --clr-baclk-1: 0 0% 1.6%;
+  --clr-black-2: 0 0% 10.2%;
+  --clr-black-3: 0 0% 0%;
+  --clr-white: 0 0% 100%;
+
+  --body-color: #efefef;
+  --nav-colour:  #ffad06;
+  --bg-color: #fff;
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+  --name-color:#000000;
+  --shadow-color:#01ffea;
+  --anti-shadow-color: #01ffea;
+  --icon-bg-color:#efefef;
+
+  /* font-size */
+  --fs-bf-250: 20vw;
+  --fs-bf-194: 12.3vw;
+  --fs-bf-109: 6.8125rem;
+  --fs-bf-80: 5rem;
+  --fs-bf-65: 4.065rem;
+  --fs-bf-50: 3.125rem;
+  --fs-bf-45: 2.8125rem;
+  --fs-bf-30: 1.875rem;
+  --fs-bf-25: 1.5625rem;
+  --fs-bf-20: 1.25rem;
+  --fs-bf-16: 1rem;
+  --fs-bf-15: 0.9375rem;
+
+  /* font family */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+.dark-theme{
+  --body-color: #0a0a0a;
+  --nav-colour: #000;
+  --bg-color: #000;
+  --name-color:#ffffff;
+  --shadow-color: red ;
+  --anti-shadow-color: #01ffea;
+  --icon-bg-color:#5e5e5e;
+
+  .social-nodex a img{
+    filter: invert(100%);
+  }
+  #dark-btn img{
+    filter: invert(100%);
+  }
+  .primary-navigation li  span img{
+    filter: invert(100%);
+  }
+  .github{
+    filter: invert(100%);
+  }
+}
+#main-board{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-image: url(../image/game_Background);*/
+}
+#main-board button{
+  background-color: #ffad06;
+  height: 30px;
+  border-radius: 5px;
+}
+#mode-selection{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh;*/
+  margin-top: 0px;
+  color: var(--name-color);
+}
+#mode-selection a{
+  color:  var(--name-color);
+}
+button{
+  color: var(--name-color);
+}
+#single-player{
+  
+}
+#back-selection{
+  margin-top: 40px;
+}
+#board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  
+}
+
+.row {
+  display: flex;
+  background-color: #ffad06;
+}
+
+.cell {
+  width: 120px;
+  height: 120px;
+  border: 1px solid var(--name-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+@media (max-width: 25em){
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--name-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+.winning-line {
+  position: absolute;
+  background-color: yellow;
+  transition: all 1s ease-out;
+  z-index: 9999; /* Ensure the line is above other elements */
+}
+
+.winning-line.active {
+  transform: scaleX(1) scaleY(1);
+}

@@ -1,0 +1,14 @@
+.nav-header{
+    width: 100%;
+    height: auto;
+    background-color: #ffad06;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    justify-content: center;
+    overflow: auto;
+    z-index: 999; /* Adjust the z-index value as needed */
+  }
+  #nav-right{
+    display: flex;
+  }

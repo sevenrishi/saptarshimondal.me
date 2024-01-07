@@ -1,0 +1,51 @@
+:root{
+  --body-color: #efefef;
+  --nav-colour:  #ffad06;
+  --bg-color: #fff;
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+  --name-color:#000000;
+  --shadow-color:#01ffea;
+  --anti-shadow-color: #01ffea;
+  --icon-bg-color:#efefef;
+
+}
+.dark-theme{
+  --body-color: #0a0a0a;
+  --nav-colour: #000;
+  --bg-color: #000;
+  --name-color:#ffffff;
+  --shadow-color: red ;
+  --anti-shadow-color: #01ffea;
+  --icon-bg-color:#5e5e5e;
+}
+.project-item-container {
+
+}
+
+.project {
+  height: auto;
+  width: calc(60% - 15px); /* Display 3 skills per row on desktop */
+  margin-bottom: 20px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color: var(--body-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* Add additional styling for the skill item */
+}
+.project img{
+  border-radius: 5px;
+  border: 5px solid #ffad06;
+}
+.project-about{
+  margin-top: -480px;
+  margin-left: 820px;
+  color: var(--name-color);
+}
+.project-about h1{
+  text-align: left;
+}
+
