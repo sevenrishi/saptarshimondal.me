@@ -32,6 +32,10 @@
     <!-- custon style Sheet & JavaScript -->
     <title>Katakuti | Saptarshi Mondal</title>
   </head>
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.31/build/spline-viewer.js"></script>
+<spline-viewer id="background-spline" url="https://prod.spline.design/oomedt1G-mHq5XSh/scene.splinecode"></spline-viewer>
+
 <body id="main-board">
   <div class="nav-header">
     <header class="primary-header container flex ">
@@ -64,7 +68,7 @@
             <span data-tooltip="Projects"><a href="../project.html"><img src="../image/project-management.png" alt=""></a></span>
           </li>
           <li>
-            <a class="fs-poppins bold-700" href="../game.html">games</a>
+            <a class="fs-poppins bold-700" href="../game.html">Games</a>
             <span data-tooltip="games"><a href="../game.html"><img src="../image/gamepad.png" alt=""></a></span>
           </li>
           <li>
@@ -78,8 +82,13 @@
     </header>
   </div>
   <div id="mode-selection">
-    <a href="Katakuti-SinglePlayer.html"><button id="single-player" class="">Single Player</button></a>
-    <a href="Katakuti-MultiPlayer.html"><button id="multi-player" class="">Multi Player</button></a>
+    <a href="Katakuti-SinglePlayer.html"><button id="single-player" style="cursor: pointer;">Single Player</button></a>
+    <a href="Katakuti-MultiPlayer.html"><button id="multi-player" style="cursor: pointer;">Multi Player</button></a>
+  </div>
+  <div id="watermark-cover">
+    <a href="https://allthoughts.xyz">
+      <img src="../image/Thoughts_logo_full.png" style="width: 90px; height: auto; margin-left: 23.5px; margin-top: 1px; " viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet" alt="Thoughts">
+    </a>
   </div>
 
   <script src="../home.js" defer></script>

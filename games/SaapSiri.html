@@ -16,6 +16,9 @@
         <link rel="stylesheet" href="../home.css">
     </head>
 
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.31/build/spline-viewer.js"></script>
+<spline-viewer id="background-spline" url="https://prod.spline.design/oomedt1G-mHq5XSh/scene.splinecode"></spline-viewer>
+
     <body>
         <div class="nav-header">
             <header class="primary-header container flex ">
@@ -28,8 +31,8 @@
               <div id="nav-right">
                 
                 <div id="dark-btn">
-                    <span id="sun-icon" ><img src="image/brightness.png" alt="" ></span>
-                    <span id="moon-icon"><img src="image/moon.png" alt="" ></span>
+                    <span id="sun-icon" ><img src="../image/brightness.png" alt="" ></span>
+                    <span id="moon-icon"><img src="../image/moon.png" alt="" ></span>
                 </div>
                 <ul class="primary-navigation flex">
                   
@@ -1336,7 +1339,14 @@
             <!-- Click sound by Sebastian. Source: http://soundbible.com/1705-Click2.html-->
             <embed src="https://studiokah.com/tests/click2.mp3"/>
         </div>
-        <script src="../home.js"></script>
+
+        <div id="watermark-cover">
+            <a href="https://allthoughts.xyz">
+              <img src="../image/Thoughts_logo_full.png" style="width: 90px; height: auto; margin-left: 23.5px; margin-top: 1px; " viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet" alt="Thoughts">
+            </a>
+          </div>
+
+        <script src="../main.js"></script>
     </body>
 
 </html>

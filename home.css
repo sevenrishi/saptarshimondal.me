@@ -343,6 +343,9 @@ select {
 #nav-right{
   display: flex;
   text-align: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 #nav-right img{
   height: 25px;
@@ -821,7 +824,7 @@ select {
     margin-left: 500px;
   }
   .foot{
-    background-color: var(--body-color);
+    /*background-color: var(--body-color);*/
     height: 170px;
     display: flex;
     align-items: center;
@@ -1117,19 +1120,15 @@ select {
   /*margin-top: 0.3rem;*/
   color: var(--bg-color);
 }
-#nav-right{
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
+
 .primary-navigation span{
   justify-content: center;
   text-align: center;
   align-items: center;
 }
 .foot{
-  background-color: var(--body-color);
-  height: 100px;
+  /*background-color: var(--body-color);*/
+  height: 80px;
 }
 
 
@@ -1215,8 +1214,8 @@ select {
   width: calc(16.66% - 15px); /* Display 3 skills per row on desktop */
   margin-bottom: 20px;
   margin-right: 15px;
-  border-radius: 5px;
-  background-color: var(--body-color);
+  border-radius: 15px;
+  /*background-color: var(--body-color);*/
   border: 3px solid #ffad06;
   display: flex;
   flex-direction: column;
@@ -1226,7 +1225,7 @@ select {
 }
 .skill:hover {
   transform: scale(1.05); /* Increase the size by 20% */
-  background-color: var(--bg-color);
+  /*background-color: var(--bg-color);*/
 }
 
 .skill img {
@@ -1423,9 +1422,9 @@ select {
 }
 .social-wheel{
   height: 470px;
-  background-color: var(--body-color);
+  /*background-color: var(--body-color);*/
   margin-top: 0px;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
   display: flex;
  justify-content: center;
  align-items: center;
@@ -1434,14 +1433,14 @@ select {
   height: 470px;
   width: 470px;
   border-radius: 50%;
-  background-color: var(--body-color);
+  /*background-color: var(--body-color);*/
 
 }
 .sw2{
  width: 350px;
  height: 350px;
  border-radius: 50%;
- background-color: var(--body-color);
+ /*background-color: var(--body-color);*/
  padding: 25px;
  margin-left: 60px;
  display: flex;
@@ -1558,7 +1557,7 @@ select {
 @media (max-width: 35em){
 .social-wheel{
    height: 330px;
-   background-color: var(--body-color);
+   /*background-color: var(--body-color);*/
    margin-top: 50px;
    margin-bottom: 300px;
    display: flex;
@@ -1569,14 +1568,14 @@ select {
    height: 330px;
    width: 330px;
    border-radius: 50%;
-   background-color: var(--body-color);
+   /*background-color: var(--body-color);*/
 
 }
 .sw2{
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  background-color: var(--body-color);
+  /*background-color: var(--body-color);*/
   padding: 25px;
   margin-left: 45px;
   display: flex;
@@ -1610,7 +1609,7 @@ select {
   height: 45px;
   width: 45px;
   border-radius: 50%;
-  background-color: var(--body-color);
+  /*background-color: var(--body-color);*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2109,7 +2108,7 @@ select {
   width: 94%;
   height: 600px;
   margin-top: 35px;
-  overflow-y: auto;
+  overflow: hidden;
   border-radius: 5px;
 }
 
@@ -2265,4 +2264,29 @@ select {
     flex-direction: row;
     justify-content: space-around;
   }
+}
+
+
+/*-----Spline Viewer-----*/
+
+#background-spline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+
+/*------------Spline Watermark Cover------------*/
+#watermark-cover {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 137px; /* Adjust as needed */
+  height: 36px; /* Adjust as needed */
+  border-radius: 10px;
+  background: var(--body-color); /* Adjust to match your page background */
+  z-index: -1; /* Ensure it's above other content */
 }
