@@ -4601,3 +4601,85 @@ svg.piece#piece-player-4 g {
     line-height: 1.4rem;
   }
 }
+
+@media (min-width: 1500px){
+.SS-ht{
+  margin-right: -215px;
+  overflow-x: hidden;
+}
+}
+@media (min-width: 1400px) and (max-width: 1500px){
+  .SS-ht{
+    margin-right: -185px;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px){
+  .SS-ht{
+    margin-right: -155px;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px){
+  .SS-ht{
+    margin-right: -125px;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px){
+  .SS-ht{
+    margin-right: -90px;
+    overflow-x: hidden;
+  }
+} 
+@media (min-width: 1000px) and (max-width: 1100px){
+  .SS-ht{
+    margin-right: -55px;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px){
+  .SS-ht{
+    margin-right: -20px;
+    overflow-x: hidden;
+  }
+}
+
+
+.SS-ht #dark-btn{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--bg-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 520px;
+}
+.SS-ht #dark-btn img{
+  filter: invert(100%);
+}
+@media (max-width: 35em) {
+  .SS-ht #dark-btn{
+    margin-right: 0px
+  }
+}
+@media (max-width: 25em) {
+  .SS-ht #dark-btn{
+    margin-right: 0px;
+  }
+}
+@media (min-width: 40em) and (max-width: 59em) {
+  
+  .SS-ht #dark-btn{
+    margin-left: 780px;
+  }
+}
+@media (min-width: 25em) and (max-width: 40em) {
+  
+  .SS-ht #dark-btn{
+    margin-right: 320px;
+  }
+}

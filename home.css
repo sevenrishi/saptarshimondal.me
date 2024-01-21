@@ -429,6 +429,7 @@ select {
   /*margin-left: 100px;*/
 }
 .primary-header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-block: 2rem;
@@ -674,7 +675,7 @@ select {
   }
   .social-wheel{
     height: 330px;
-    background-color: var(--body-color);
+    /*background-color: var(--body-color);*/
     margin-top: -150px;
     margin-bottom: 300px;
     display: flex;
@@ -1390,7 +1391,7 @@ select {
     display: block;
   }
   .foot{
-    background-color: var(--body-color);
+    /*background-color: var(--body-color);*/
     height: 160px;
     display: flex;
     flex-direction: column;
@@ -1475,7 +1476,7 @@ select {
  height: 60px;
  width: 60px;
  border-radius: 50%;
- background-color: var(--body-color);
+ /*background-color: var(--body-color);*/
  display: flex;
  justify-content: center;
  align-items: center;
