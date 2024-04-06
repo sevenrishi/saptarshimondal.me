@@ -1122,6 +1122,12 @@ select {
   color: var(--bg-color);
 }
 
+.footer-icon a img{
+  font-size: 1.3rem;
+  /*margin-top: 0.3rem;*/
+  color: var(--bg-color);
+}
+
 .primary-navigation span{
   justify-content: center;
   text-align: center;
@@ -1227,6 +1233,7 @@ select {
 .skill:hover {
   transform: scale(1.05); /* Increase the size by 20% */
   /*background-color: var(--bg-color);*/
+  box-shadow: 0 0 15px var(--anti-shadow-color);
 }
 
 .skill img {
